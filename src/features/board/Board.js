@@ -8,7 +8,6 @@ import { selectBoard } from './boardSlice';
 export const Board = () => {
   // Add selected data variable and implement below
   const currentBoard = useSelector(selectBoard);
-
   const numberOfCards = currentBoard.length;
   const columns = 3;
   const rows = Math.floor(numberOfCards / columns);
