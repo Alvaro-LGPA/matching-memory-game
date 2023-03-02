@@ -1,6 +1,7 @@
 import React from 'react';
 // Add import statement below
-
+import { useSelector } from 'react-redux';
+import { selectMatchedIDs } from '../board/boardSlice';
 
 export const Score = () => {
   // Add selected data variable below
