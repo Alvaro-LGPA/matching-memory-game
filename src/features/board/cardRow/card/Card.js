@@ -24,7 +24,7 @@ export const Card = ({ id, contents }) => {
 
   // 1st if statement
   // implement card id array membership check
-  if (false) {
+  if (visibleIDs.includes(id)) {
     cardText = contents;
     click = () => {};
   }
