@@ -97,5 +97,5 @@ const initialState = [
   
   export const selectBoard = state => state.map(card => ({id: card.id, contents: card.contents}));
 
-  export const selectVisibleIds = state => state.filter(card => card.visible).map(card => card.id);
+  export const selectVisibleIDs = state => state.filter(card => card.visible).map(card => card.id);
   
