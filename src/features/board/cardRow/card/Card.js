@@ -25,14 +25,14 @@ export const Card = ({ id, contents }) => {
 
   // 1st if statement
   // implement card id array membership check
-  if (visibleIDs.includes(id)) {
+  if (visibleIDs.includes(id) || matchedIDs.includes(id)) {
     cardText = contents;
     click = () => {};
   }
 
   // 2nd if statement
   // implement card id array membership check
-  if (false) {
+  if (matchedIDs.includes(id)) {
     cardStyle = 'matched';
   }
 
