@@ -9,7 +9,7 @@ export const Board = () => {
   // Add selected data variable and implement below
   const currentBoard = useSelector(selectBoard);
 
-  const numberOfCards = currentBoard;
+  const numberOfCards = currentBoard.length;
   const columns = 3;
   const rows = Math.floor(numberOfCards / columns);
 
@@ -22,6 +22,7 @@ export const Board = () => {
     }
     return rowCards;
   };
+  console.log(rows)
 
   let content = [];
   for (let row = 0; row < rows; row++) {
